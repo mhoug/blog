@@ -4,3 +4,4 @@ __pycache__
 mysite_env
 /static
 .DS_Store
+.env
