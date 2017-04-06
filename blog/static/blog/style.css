@@ -15,10 +15,11 @@
 
 html, body {
     background-color: rgb(255,230,230);
+    height: 100%;
 }
 
 .blogs {
-  margin-top: -18px;
+  margin-top: -16px;
 }
 
 .content {
@@ -58,3 +59,14 @@ h2 {
 .post h2 a, .post h2 a:visited {
     color: red;
 }
+
+/*.footer {
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    font-family: Aclonica;
+}
+
+.footer a {
+    color: red;
+}*/
