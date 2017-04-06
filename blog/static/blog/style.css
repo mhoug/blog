@@ -1,0 +1,60 @@
+.page-header {
+    background-color: rgb(75,0,0);
+    margin-top: 0;
+    padding: 20px 20px 15px 20px;
+    border-color: #A00000;
+    border-bottom-style: double;
+    border-width: 10px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    font-size: 200%;
+    color: red;
+    font-family: Poller One;
+}
+
+html, body {
+    background-color: rgb(255,230,230);
+}
+
+.blogs {
+  margin-top: -18px;
+}
+
+.content {
+    margin-left: 30px;
+}
+
+h2 {
+    color: red;
+    font-family: Poller One;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.text {
+    color: #320000;
+    font-family: Aclonica;
+}
+
+.date {
+    color: #A02828;
+    font-family: Aclonica;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: red;
+}
