@@ -12,5 +12,25 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
         <br>
+        <br>
+        <div class="edit">
+            {% if user.is_authenticated %}
+                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">Edit post <span class="glyphicon glyphicon-pencil"></span></a>
+            {% endif %}
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="scroll">
+        {% if post.pk > 1 %}
+            <div class="previous">
+                <a href="{% url 'post_detail' pk=post.pk|add:"-1" %}"><<< View previous post</a>
+            </div>
+        {% endif %}
+        {% if post.pk != last_post.pk %}
+            <div class="next">
+                <a href="{% url 'post_detail' pk=post.pk|add:"+1" %}">View next post >>></a>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}

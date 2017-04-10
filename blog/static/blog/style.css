@@ -8,9 +8,10 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    font-size: 200%;
+    font-size: 220%;
     color: red;
-    font-family: Poller One;
+    font-weight: bold;
+    font-family: Catamaran;
 }
 
 html, body {
@@ -19,7 +20,7 @@ html, body {
 }
 
 .blogs {
-  margin-top: -16px;
+    margin-top: -16px;
 }
 
 .content {
@@ -28,21 +29,30 @@ html, body {
 
 h2 {
     color: red;
-    font-family: Poller One;
+    font-weight: bold;
+    font-family: Catamaran;
 }
 
-.save {
+.save, .edit, .save a, .edit a {
     float: right;
+    font-family: Pavanam;
 }
 
 .post-form textarea, .post-form input {
     width: 100%;
 }
 
+.post {
+    margin-bottom: 28px;
+    color: #A02828;
+    border-bottom-style: solid;
+    border-width: thin;
+}
+
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: rgb(255,0,0);
     float: right;
-    font-size: 26pt;
+    font-size: 21pt;
     margin-right: 20px;
 }
 
@@ -56,17 +66,29 @@ h2 {
     font-family: Aclonica;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2 a, .post h2 a:visited, footer a {
     color: red;
 }
 
-/*.footer {
+.earlier, .earlier a, .earlier a:hover, .earlier a:visited, .scroll a {
+    margin-top: -15px;
+    color: red;
+    font-family: Catamaran;
+    font-size: 14px;
+}
+
+.previous {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+footer {
     text-align: center;
-    vertical-align: bottom;
     padding-bottom: 10px;
-    font-family: Aclonica;
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: Catamaran;
 }
-
-.footer a {
-    color: red;
-}*/

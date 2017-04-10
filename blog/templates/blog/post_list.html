@@ -5,7 +5,7 @@
         <div class="post">
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <div class="date">
-                <p>published: {{ post.published_date }}</p>
+                <p>{{ post.published_date }}</p>
             </div>
             <div class="text">
                 <p>{{ post.text|linebreaksbr }}</p>
@@ -13,4 +13,8 @@
             <br>
         </div>
     {% endfor %}
+    {% if posts|length <= 10 %}
+    <div class="earlier">
+        <a href="{% url 'post_all' %}">View earlier posts...</a>
+    {% endif %}
 {% endblock %}
