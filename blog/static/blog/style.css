@@ -1,41 +1,147 @@
 .page-header {
-    background-color: rgb(75,0,0);
-    margin-top: 0;
-    padding: 20px 20px 15px 20px;
-    border-color: #FF0000;
-    border-bottom-style: double;
-    border-width: 10px;
+    background: linear-gradient(rgb(0,0,45), rgb(0,30, 120));
+    margin-top: 0px;
+    /*margin-right: -5px;*/
+    padding: 20px 20px 20px 20px;
+    /*border-color: #FF0000;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: thin;*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.social div {
+  float: right;
+  color: white;
+  display: flex;
+}
+
+.icons div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.follow {
+  font-size: 14px;
+  font-family: Poppins;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.icons img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: block;
+}
+
+.icons img:hover {
+  background: linear-gradient(rgb(0,0,50), rgb(0,25, 90));
+}
+/*.banner {
+  width: 100%;
+  height: 100px;
+  background-image: url("images/skyline.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}*/
+
+.sub-header {
+    background: linear-gradient(rgb(0,0,40), rgb(0,15, 80));
+    margin: -21px 0px 0px 0px;
+    /*padding: 20px;*/
+    /*border-color: #FF0000;
+    border-bottom-style: solid;
+    border-width: thin;*/
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    font-size: 220%;
-    color: red;
+    font-size: 80px;
+    color: white;
     font-weight: bold;
-    font-family: Catamaran;
+    font-family: 'Josephin Sans', sans-serif;
+    /*text-shadow:
+    -1px -1px 0 #0000ff,
+    1px -1px 0 #0000ff,
+    -1px 1px 0 #0000ff,
+    1px 1px 0 #0000ff;*/
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+}
+
+.sub-header, .sub-header a, .sub-header a:visited, .sub-header a:active {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: Poppins;
+  flex: 1;
+  text-align: center;
+}
+
+.mag {
+  width: 19px;
+  height: 19px;
+  margin-top: -1px;
+}
+
+#about, #training, #testimonials, #faqs, #partners, #contact, #search {
+  /*font-size: 20px;
+  color: red;
+  font-weight: bold;
+  font-family: Catamaran;*/
+  flex: 1;
+  /*border-style: solid;
+  border-color: red;
+  border-width: thin;*/
+  /*text-align: center;*/
+  /*margin: 15px 15px 15px 15px;*/
+  /*padding: 20px;*/
+}
+
+.menu div {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: block;
+}
+
+.menu div:hover {
+  background: linear-gradient(rgb(0,0,45), rgb(0,30,120));
 }
 
 html, body {
-    background-color: rgb(255,230,230);
-    height: 100%;
+    /*background-color: rgb(230,230,255);*/
+    min-width: 1356px;
+    min-height: auto;
+    margin: 0 auto;
+    /*overflow-y: scroll;*/
+    /*overflow-x: scroll;*/
 }
 
 .blogs {
-    margin-top: -16px;
+    margin-top: 10px;
 }
 
 .content {
     margin-left: 30px;
+    margin-right: 30px;
 }
 
-h2 {
-    color: red;
+h2 a {
     font-weight: bold;
     font-family: Catamaran;
 }
 
 .save, .edit, .save a, .edit a {
     float: right;
-    font-family: Pavanam;
+    font-family: Catamaran;
 }
 
 .post-form textarea, .post-form input {
@@ -44,35 +150,40 @@ h2 {
 
 .post {
     margin-bottom: 28px;
-    color: #A02828;
+    color: blue;
     border-bottom-style: solid;
     border-width: thin;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: rgb(255,0,0);
-    float: right;
+    color: white;
+    position: absolute;
+    left: 1300px;
+    top: 110px;
+    /*float: right; */
     font-size: 21pt;
     margin-right: 20px;
 }
 
 .text {
-    color: #320000;
-    font-family: Aclonica;
+    color: black;
+    font-family: Catamaran;
+    font-size: 16px;
 }
 
 .date {
-    color: #A02828;
-    font-family: Aclonica;
+    color: rgb(0,0,30);
+    font-family: Catamaran;
+    font-size: 20px;
 }
 
 .post h2 a, .post h2 a:visited, footer a {
-    color: red;
+    color: rgb(0,15, 100);
 }
 
 .earlier, .earlier a, .earlier a:hover, .earlier a:visited, .scroll a {
     margin-top: -15px;
-    color: red;
+    color: rgb(0,15, 100);
     font-family: Catamaran;
     font-size: 14px;
 }
@@ -87,8 +198,9 @@ h2 {
 
 footer {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     padding-top: 20px;
+    /*margin-top: 90%;*/
     font-size: 15px;
     font-family: Catamaran;
 }
